@@ -47,3 +47,21 @@
       height: 300px; /* Ajusta el alto según lo necesites */
       margin: 0 auto;
   }
+
+  .card {
+    height: 100%; /* Asegura que las tarjetas llenen el contenedor */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card img {
+    height: 200px; /* Tamaño uniforme para las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
+  }
+
+  .card-body {
+    flex-grow: 1; /* Permite que el contenido del body ocupe el espacio necesario */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
