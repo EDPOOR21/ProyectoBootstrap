@@ -40,3 +40,10 @@
   .content {
     text-align: center;
   }
+    /* Estilo para reducir el tamaño del calendario en los modales */
+    #calendar, #calendar2, #calendar3, #calendar4, #calendar5, #calendar6 {
+      max-width: 100%;
+      width: 100%;
+      height: 300px; /* Ajusta el alto según lo necesites */
+      margin: 0 auto;
+  }
