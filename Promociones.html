@@ -8,109 +8,56 @@
 </head>
 <body>
     <div class="container text-center">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
-        <div class="container-fluid">
-          <!-- Logo y texto -->
-          <div class="d-flex align-items-center">
-            <img src="/assets/logotorre.png" alt="Logo Torre Médica" class="img-fluid" style="max-height: 50px; margin-right: 10px;">
-            <span class="navbar-brand mb-0 fs-4">Torre Médica</span>
-          </div>
-          <!-- Botón para colapsar el menú -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navegación -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Especialidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Promociones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Inicio sesion / Registro</a>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+            <div class="container-fluid">
+              <!-- Logo y texto -->
+              <div class="d-flex align-items-center">
+                <img src="/assets/logotorre.png" alt="Logo Torre Médica" class="img-fluid" style="max-height: 50px; margin-right: 10px;">
+                <span class="navbar-brand mb-0 fs-4">Torre Médica</span>
+              </div>
+              <!-- Botón para colapsar el menú -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navegación -->
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/paciente.html#nosotros">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/especialidades.html">Especialidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
               <!-- Título Principal -->
               <h1 class="fw-bold mb-4">¡No te pierdas estas promociones!</h1>
 
-              <!-- Carrusel de Promociones -->
-              <div id="promocionesCarousel" class="carousel slide mx-auto mb-5" data-bs-ride="carousel" style="max-width: 800px;">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img src="/assets/cardiologia.jpg" class="d-block w-100" alt="Consulta cardiológica al 30% de descuento.">
-                          <div class="carousel-caption d-none d-md-block">
-                              <h5 class="fw-bold">Consulta cardiológica al 30% de descuento</h5>
-                              <a href="especialidades.html#cardiologiaModal" class="btn btn-primary">Aplicar Promoción</a>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <img src="/assets/ginecologia.jpg" class="d-block w-100" alt="Revisión ginecológica completa al 25% de descuento.">
-                          <div class="carousel-caption d-none d-md-block">
-                              <h5 class="fw-bold">Revisión ginecológica completa al 25% de descuento</h5>
-                              <a href="especialidades.html#ginecologiaModal" class="btn btn-primary">Aplicar Promoción</a>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <img src="/assets/endocrinologia.jpg" class="d-block w-100" alt="Consulta endocrinológica al 15% de descuento.
-      
-                          ">
-                          <div class="carousel-caption d-none d-md-block">
-                              <h5 class="fw-bold">Consulta endocrinológica al 15% de descuento</h5>
-                              <a href="especialidades.html#endocrinologiaModal" class="btn btn-primary">Aplicar Promoción</a>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <img src="/assets/dermatologia.jpg" class="d-block w-100" alt="Consulta dermatológica especializada al 20% de descuento.">
-                          <div class="carousel-caption d-none d-md-block">
-                              <h5 class="fw-bold">Consulta dermatológica especializada al 20% de descuento</h5>
-                              <a href="especialidades.html#dermatologiaModal" class="btn btn-primary">Aplicar Promoción</a>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <img src="/assets/pediatria.jpg" class="d-block w-100" alt="Consulta pediátrica al 10% de descuento.">
-                          <div class="carousel-caption d-none d-md-block">
-                              <h5 class="fw-bold">Consulta pediátrica al 10% de descuento</h5>
-                              <a href="especialidades.html#pediatriaModal" class="btn btn-primary">Aplicar Promoción</a>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <img src="/assets/oftalmologia.jpg" class="d-block w-100" alt="">
-                          <div class="carousel-caption d-none d-md-block">
-                              <h5 class="fw-bold">Consulta oftalmológica al 18% de descuento</h5>
-                              <a href="especialidades.html#oftalmologiaModal" class="btn btn-primary">Aplicar Promoción</a>
-                          </div>
-                      </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#promocionesCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Anterior</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#promocionesCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Siguiente</span>
-                  </button>
-              </div>
+              
       
               <!-- Cards de Promociones -->
               <div class="row text-center">
                   <div class="col-md-6 mb-4">
                       <div class="card">
-                          <img src="/assets/cardiologia.jpg" class="card-img-top" alt="Cardiología">
+                          <img src="/assets/card1.jpg" class="card-img-top" alt="Cardiología">
                           <div class="card-body">
                               <h5 class="card-title">Promoción Cardiología</h5>
                               <p>Consulta cardiológica al 30% de descuento.</p>
@@ -120,7 +67,7 @@
                   </div>
                   <div class="col-md-6 mb-4">
                       <div class="card">
-                          <img src="/assets/ginecologia.jpg" class="card-img-top" alt="Ginecología">
+                          <img src="/assets/card2.jpg" class="card-img-top" alt="Ginecología">
                           <div class="card-body">
                               <h5 class="card-title">Promoción Ginecología</h5>
                               <p>Revisión ginecológica completa al 25% de descuento.</p>
@@ -130,7 +77,7 @@
                   </div>
                   <div class="col-md-6 mb-4">
                       <div class="card">
-                          <img src="/assets/endocrinologia.jpg" class="card-img-top" alt="Endocrinología">
+                          <img src="/assets/card3.jpg" class="card-img-top" alt="Endocrinología">
                           <div class="card-body">
                               <h5 class="card-title">Promoción Endocrinología</h5>
                               <p>Consulta endocrinológica al 15% de descuento.</p>
@@ -140,7 +87,7 @@
                   </div>
                   <div class="col-md-6 mb-4">
                       <div class="card">
-                          <img src="/assets/dermatologia.jpg" class="card-img-top" alt="Dermatología">
+                          <img src="/assets/card4.jpeg" class="card-img-top" alt="Dermatología">
                           <div class="card-body">
                               <h5 class="card-title">Promoción Dermatología</h5>
                               <p>Consulta dermatológica especializada al 20% de descuento.</p>
@@ -150,7 +97,7 @@
                   </div>
                   <div class="col-md-6 mb-4">
                       <div class="card">
-                          <img src="/assets/pediatria.jpg" class="card-img-top" alt="Pediatría">
+                          <img src="/assets/card5.jpg" class="card-img-top" alt="Pediatría">
                           <div class="card-body">
                               <h5 class="card-title">Promoción Pediatría</h5>
                               <p>Consulta pediátrica al 10% de descuento.</p>
@@ -160,7 +107,7 @@
                   </div>
                   <div class="col-md-6 mb-4">
                       <div class="card">
-                          <img src="/assets/oftalmologia.jpg" class="card-img-top" alt="Oftalmología">
+                          <img src="/assets/card6.jpg" class="card-img-top" alt="Oftalmología">
                           <div class="card-body">
                               <h5 class="card-title">Promoción Oftalmología</h5>
                               <p>Consulta oftalmológica al 18% de descuento.</p>
