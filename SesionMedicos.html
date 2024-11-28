@@ -45,6 +45,81 @@
           </div>
         </div>
       </nav>
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+   body {
+     background-color: #ffffff; /* Fondo blanco */
+   }
+   .calendar-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 30px; /* Espacio entre calendario y texto */
+   }
+   .calendar {
+     width: 100%;
+     max-width: 1000px; /* Tamaño más grande para pantallas grandes */
+     height: 600px; /* Altura fija para un mejor ajuste visual */
+   }
+   .citas {
+     text-align: center; /* Centra todo el texto de las citas */
+     margin-top: 20px;
+   }
+   .cita-title {
+     font-weight: bold;
+     font-size: 28px; /* Tamaño más grande para el título */
+   }
+   .cita-subtitle {
+     font-size: 16px;
+     color: #6c757d;
+     margin-bottom: 20px; /* Espacio entre subtítulo y citas */
+   }
+   .cita-list {
+     display: inline-block; /* Permite centrar las citas */
+     text-align: left; /* Alinea el texto dentro de las citas */
+   }
+ </style>
+</head>
+<body>
+
+ <div class="container my-5">
+   <!-- Título y subtítulo -->
+   <div class="text-center">
+     <h1 class="cita-title">Citas programadas</h1>
+     <p class="cita-subtitle">Te recordamos llegar a tiempo a tus citas, tus pacientes te esperan.</p>
+   </div>
+
+   <!-- Calendario centrado -->
+   <div class="calendar-container">
+     <iframe 
+       src="https://calendar.google.com/calendar/embed?src=es.mexican%23holiday%40group.v.calendar.google.com&ctz=America/Mexico_City"
+       class="calendar"
+       style="border: 0" 
+       frameborder="0" 
+       scrolling="no">
+     </iframe>
+   </div>
+
+   <!-- Texto de citas -->
+   <div class="citas">
+     <h3 class="cita-title">Citas por Especialidad</h3>
+     <div class="cita-subtitle">Aquí tienes tus citas próximas:</div>
+     <div class="cita-list">
+       <p><strong>Medicina Interna:</strong> Lunes, 10:00 AM, Consultorio 101 - <em>Dr. Juan Pérez</em></p>
+       <p><strong>Cardiología:</strong> Miércoles, 12:00 PM, Consultorio 202 - <em>Dr. María Gómez</em></p>
+       <p><strong>Pediatría:</strong> Viernes, 4:00 PM, Consultorio 303 - <em>Dr. Carlos Ramírez</em></p>
+       <p><strong>Ginecología:</strong> Martes, 11:00 AM, Consultorio 102 - <em>Dra. Ana Martínez</em></p>
+       <p><strong>Neurología:</strong> Jueves, 3:00 PM, Consultorio 204 - <em>Dr. José Fernández</em></p>
+       <p><strong>Geriatría:</strong> Sábado, 9:00 AM, Consultorio 305 - <em>Dra. Laura López</em></p>
+     </div>
+   </div>
+ </div>
+
+ <!-- Bootstrap JS Bundle -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
 
 
