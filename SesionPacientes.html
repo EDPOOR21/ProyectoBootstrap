@@ -35,182 +35,94 @@
                 <a class="nav-link" href="/Promociones.html">Promociones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="/contacto.html">Contacto</a>
               </li>
-              
-              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio sesion / Registro</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
+    </div>
 
-
-
-
-
-          <!-- Tarjeta para Pacientes -->
-          <div class="col-md-4">
-            <div class="card text-white bg-primary mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Soy Paciente</h5>
-                <p class="card-text">Accede a tus citas, historial médico y promociones.</p>
-                <a href="/paciente.html" ><button type="button" class="btn btn-success" onclick="activarNuevaPestaña()">Entrar</button>
-
-                </a>
-              </div>
-            </div>
-          </div>
-         <!-- Modal: Perfil del Paciente -->
-          <div class="modal fade" id="perfilPacienteModal" tabindex="-1" aria-labelledby="perfilPacienteModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="perfilPacienteModalLabel">Tu perfil</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-<!-- Tabs -->
-
-          <script>
-            function activarNuevaPestaña() { 
-              const modal = new bootstrap.Modal(document.querySelector('#perfilPacienteModal'));
-              modal.show();
-          
-              // Activacion
-              const nuevaTab = new bootstrap.Tab(document.querySelector('#nueva-tab'));
-              nuevaTab.show();
-            }
-          </script>
-
- <ul class="nav nav-tabs" id="perfilTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="citas-tab" data-bs-toggle="tab" data-bs-target="#citas" type="button" role="tab" aria-controls="citas" aria-selected="true">
-                Opciones de Citas
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="historial-tab" data-bs-toggle="tab" data-bs-target="#historial" type="button" role="tab" aria-controls="historial" aria-selected="false">
-                Historial de Consultas
-              </button>
-            </li>
-          </ul>
-          <div class="tab-content mt-3" id="perfilTabContent"> 
-            <!-- Tab 1: Opciones de Citas -->
-            <div class="tab-pane fade show active" id="citas" role="tabpanel" aria-labelledby="citas-tab">
-              <div class="accordion" id="accordionCitas">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingAgendar">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgendar" aria-expanded="true" aria-controls="collapseAgendar">
-                      Agendar Cita
-                    </button>
-                  </h2>
-                  <div id="collapseAgendar" class="accordion-collapse collapse show" aria-labelledby="headingAgendar" data-bs-parent="#accordionCitas">
-                    <div class="accordion-body">
-                      <p>Formulario para agendar cita aquí.</p> 
-                      <!-- Tooltip -->
-                      <button class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Rellena todos los campos requeridos.">¿Necesitas ayuda?</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingReagendar">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReagendar" aria-expanded="false" aria-controls="collapseReagendar">
-                      Reagendar Cita
-                    </button>
-                  </h2>
-                  <div id="collapseReagendar" class="accordion-collapse collapse" aria-labelledby="headingReagendar" data-bs-parent="#accordionCitas">
-                    <div class="accordion-body">
-                      <p>Formulario para reagendar cita aquí.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingCancelar">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCancelar" aria-expanded="false" aria-controls="collapseCancelar">
-                      Cancelar Citas
-                    </button>
-                  </h2>
-                  <div id="collapseCancelar" class="accordion-collapse collapse" aria-labelledby="headingCancelar" data-bs-parent="#accordionCitas">
-                    <div class="accordion-body">
-                      <p>Formulario para cancelar citas aquí.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>  
-            <!-- Tab 2: Historial de Consultas -->
-            <div class="tab-pane fade" id="historial" role="tabpanel" aria-labelledby="historial-tab">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Historial de Consultas</h5>
-                  <p class="card-text">Aquí se muestra el historial de todas tus consultas.</p>  
-                  <!-- Popover -->
-                  <button class="btn btn-secondary" type="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Lista de atenciones por fecha">
-                   Lista
+      <!--Perfil del Paciente -->
+      <div> 
+        <h5 class="title" id="perfilpaciente">Tu perfil</h5>
+        <ul class="nav nav-tabs" id="perfilTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="citas-tab" data-bs-toggle="tab" data-bs-target="#citas" type="button" role="tab" aria-controls="citas" aria-selected="true">
+              Opciones de Citas
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="historial-tab" data-bs-toggle="tab" data-bs-target="#historial" type="button" role="tab" aria-controls="historial" aria-selected="false">
+              Historial de Consultas
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content mt-3" id="perfilTabContent">
+          <!-- Tab 1: Opciones de Citas -->
+          <div class="tab-pane fade show active" id="citas" role="tabpanel" aria-labelledby="citas-tab">
+            <div class="accordion" id="accordionCitas">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAgendar">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgendar" aria-expanded="true" aria-controls="collapseAgendar">
+                    Agendar Cita
                   </button>
+                </h2>
+                <div id="collapseAgendar" class="accordion-collapse collapse show" aria-labelledby="headingAgendar" data-bs-parent="#accordionCitas">
+                  <div class="accordion-body">
+                    <p>Formulario para agendar cita aquí.</p>
+                    <!-- Tooltip -->
+                    <button class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Rellena todos los campos requeridos.">¿Necesitas ayuda?</button>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingReagendar">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReagendar" aria-expanded="false" aria-controls="collapseReagendar">
+                    Reagendar Cita
+                  </button>
+                </h2>
+                <div id="collapseReagendar" class="accordion-collapse collapse" aria-labelledby="headingReagendar" data-bs-parent="#accordionCitas">
+                  <div class="accordion-body">
+                    <p>Formulario para reagendar cita aquí.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCancelar">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCancelar" aria-expanded="false" aria-controls="collapseCancelar">
+                    Cancelar Citas
+                  </button>
+                </h2>
+                <div id="collapseCancelar" class="accordion-collapse collapse" aria-labelledby="headingCancelar" data-bs-parent="#accordionCitas">
+                  <div class="accordion-body">
+                    <p>Formulario para cancelar citas aquí.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-            
-
-            
+          <!-- Tab 2: Historial de Consultas -->
+          <div class="tab-pane fade" id="historial" role="tabpanel" aria-labelledby="historial-tab">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Historial de Consultas</h5>
+                <p class="card-text">Aquí se muestra el historial de todas tus consultas.</p>
+                <!-- Popover -->
+                <button class="btn btn-secondary" type="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Lista de atenciones por fecha">
+                 Lista
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
 
+      </div>
 
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-    </div>
+ 
     
 </body>
 
@@ -219,3 +131,4 @@
 
 
 </html>
+ 
