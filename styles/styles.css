@@ -1,67 +1,97 @@
+/* Tarjetas */
 .card {
-    border-radius: 10px; /* Esquinas redondeadas */
-    transition: transform 0.2s; /* Efecto de hover */
-  }
-  
-  .card:hover {
-    transform: scale(1.05); /* Amplía la tarjeta ligeramente */
-  }
-  
-  .bg-primary {
-    background-color: #0077ff !important; /* Azul sólido */
-  }
-  
-  .bg-success {
-    background-color: #149231 !important; /* Verde sólido */
-  }
-  
-  body {
-    background-color: #ffffff; /* Beige claro */
-    color: #333; /* Texto en gris oscuro para buen contraste */
-  }
+  border-radius: 10px; /* Esquinas redondeadas */
+  transition: transform 0.3s; /* Efecto de hover */
+  height: 100%; /* Asegura que las tarjetas llenen el contenedor */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para las tarjetas */
+}
 
-  #navbartop {
+.card:hover {
+  transform: translateY(-10px); /* Efecto al pasar el mouse */
+}
+
+.card img {
+  height: 200px; /* Tamaño uniforme para las imágenes */
+  object-fit: cover; /* Ajusta las imágenes correctamente */
+}
+
+.card-body {
+  flex-grow: 1; /* Permite que el contenido del body ocupe el espacio necesario */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Colores de fondo */
+.bg-primary {
+  background-color: #0077ff !important; /* Azul sólido */
+}
+
+.bg-success {
+  background-color: #149231 !important; /* Verde sólido */
+}
+
+/* General */
+body {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #333; /* Texto en gris oscuro para buen contraste */
+}
+
+/* Navbar */
+.custom-navbar {
+  height: auto; /* Ajusta automáticamente según el contenido */
+  padding: 10px 15px; /* Espaciado interno */
+}
+
+
+.custom-navbar .navbar-text {
+  color: #ffffff; /* Color del texto del navbar */
+}
+
+.custom-navbar img {
+  height: 20px; /* Alto fijo */
+  width: auto; /* Mantiene las proporciones */
+  margin-right: 10px; /* Espaciado con el texto */
+}
+
+
+
+
+/* Degradado personalizado */
+.custom-bg {
+  background: linear-gradient(135deg, #007bff, #00c853); /* Degradado atractivo */
+  color: white;
+  padding: 50px 0;
+}
+
+/* Títulos y texto */
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+}
+
+/* Calendarios */
+#calendar, #calendar2, #calendar3, #calendar4, #calendar5, #calendar6 {
+  max-width: 100%;
+  width: 100%;
+  height: 300px; /* Ajusta el alto según lo necesites */
+  margin: 0 auto;
+}
+
+/* Navbar superior (si aplica) */
+#navbartop {
   background-color: #f5f5dc; /* Beige claro */
+}
 
-  }  
-  .custom-navbar {
-    background-color: #ffffff; /* Fondo beige claro */
-    font-family: Arial, sans-serif; /* Fuente Arial */
-  }
-  
-  .custom-navbar .navbar-text {
-    color: #333; /* Color del texto (gris oscuro para contraste) */
-  }
-  
-  .title {
-    font-weight: bold;
-    text-align: center;
-  }
-  .content {
-    text-align: center;
-  }
-    /* Estilo para reducir el tamaño del calendario en los modales */
-    #calendar, #calendar2, #calendar3, #calendar4, #calendar5, #calendar6 {
-      max-width: 100%;
-      width: 100%;
-      height: 300px; /* Ajusta el alto según lo necesites */
-      margin: 0 auto;
-  }
 
-  .card {
-    height: 100%; /* Asegura que las tarjetas llenen el contenedor */
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card img {
-    height: 200px; /* Tamaño uniforme para las imágenes */
-    object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
-  }
-
-  .card-body {
-    flex-grow: 1; /* Permite que el contenido del body ocupe el espacio necesario */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+   body {
+     background-color: #ffffff; /* Fondo blanco */
+   }
+   
+   
