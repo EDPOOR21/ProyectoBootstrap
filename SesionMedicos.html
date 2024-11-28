@@ -75,6 +75,33 @@
      display: inline-block; /* Permite centrar las citas */
      text-align: left; /* Alinea el texto dentro de las citas */
    }
+   .custom-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+   }
+   .citas-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .cita-list p {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+        .historial-medico {
+            background-color: #f1f3f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .historial-card {
+            background-color: #ffffff;
+            border-left: 4px solid #007bff;
+            margin-bottom: 15px;
+            padding: 15px;
+        }    
  </style>
 </head>
 <body>
@@ -98,7 +125,7 @@
    </div>
 
    <!-- Texto de citas -->
-   <div class="citas">
+   <!-- <div class="citas">
      <h3 class="cita-title">Citas por Especialidad</h3>
      <div class="cita-subtitle">Aquí tienes tus citas próximas:</div>
      <div class="cita-list">
@@ -109,7 +136,64 @@
        <p><strong>Neurología:</strong> Jueves, 3:00 PM, Consultorio 204 - <em>Dr. José Fernández</em></p>
        <p><strong>Geriatría:</strong> Sábado, 9:00 AM, Consultorio 305 - <em>Dra. Laura López</em></p>
      </div>
-   </div>
+   </div> -->
+
+    <!--DISPLAY  -->
+    <div class="container-fluid mt-4">
+      <div class="row">
+          <!-- Columna de Citas -->
+          <div class="col-md-6">
+              <div class="card custom-card citas-container">
+                  <div class="card-body">
+                      <h3 class="card-title text-primary mb-4">Citas por Especialidad</h3>
+                      <div class="cita-subtitle text-muted mb-3">Aquí tienes tus citas próximas:</div>
+                      <div class="cita-list">
+                          <p><strong>Medicina Interna:</strong> Lunes, 10:00 AM, Consultorio 101 - <em>Dr. Juan Pérez</em></p>
+                          <p><strong>Cardiología:</strong> Miércoles, 12:00 PM, Consultorio 202 - <em>Dr. María Gómez</em></p>
+                          <p><strong>Pediatría:</strong> Viernes, 4:00 PM, Consultorio 303 - <em>Dr. Carlos Ramírez</em></p>
+                          <p><strong>Ginecología:</strong> Martes, 11:00 AM, Consultorio 102 - <em>Dra. Ana Martínez</em></p>
+                          <p><strong>Neurología:</strong> Jueves, 3:00 PM, Consultorio 204 - <em>Dr. José Fernández</em></p>
+                          <p><strong>Geriatría:</strong> Sábado, 9:00 AM, Consultorio 305 - <em>Dra. Laura López</em></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Columna de Historiales Médicos -->
+          <div class="col-md-6">
+              <div class="card custom-card historial-medico">
+                  <div class="card-body">
+                      <h3 class="card-title text-primary mb-4">Historiales Médicos</h3>
+                      
+                      <div class="historial-card">
+                          <h5 class="text-primary">María López García</h5>
+                          <p class="mb-1"><strong>Edad:</strong> 42 años</p>
+                          <p class="mb-1"><strong>Consulta de Cardiología</strong> - 15/11/2024</p>
+                          <p class="mb-1"><span class="badge bg-warning text-dark">Diagnóstico:</span> Hipertensión leve</p>
+                          <p class="mb-0"><span class="badge bg-success">Tratamiento:</span> Metoprolol 50mg, dieta baja en sodio</p>
+                      </div>
+
+                      <div class="historial-card">
+                          <h5 class="text-primary">Juan Martínez Rodríguez</h5>
+                          <p class="mb-1"><strong>Edad:</strong> 55 años</p>
+                          <p class="mb-1"><strong>Consulta de Neurología</strong> - 22/10/2024</p>
+                          <p class="mb-1"><span class="badge bg-warning text-dark">Diagnóstico:</span> Migraña crónica</p>
+                          <p class="mb-0"><span class="badge bg-success">Tratamiento:</span> Topiramato 50mg, terapia de relajación</p>
+                      </div>
+
+                      <div class="historial-card">
+                          <h5 class="text-primary">Ana Sánchez Pérez</h5>
+                          <p class="mb-1"><strong>Edad:</strong> 35 años</p>
+                          <p class="mb-1"><strong>Consulta de Ginecología</strong> - 03/11/2024</p>
+                          <p class="mb-1"><span class="badge bg-warning text-dark">Diagnóstico:</span> Control prenatal, embarazo de 16 semanas</p>
+                          <p class="mb-0"><span class="badge bg-success">Tratamiento:</span> Seguimiento mensual, vitaminas prenatales</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
  </div>
 
  <!-- Bootstrap JS Bundle -->
